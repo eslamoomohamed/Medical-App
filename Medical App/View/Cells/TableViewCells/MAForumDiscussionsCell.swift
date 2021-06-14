@@ -1,0 +1,205 @@
+//
+//  MAForumDiscussionsCell.swift
+//  Medical App
+//
+//  Created by eslam on 6/2/21.
+//
+
+import UIKit
+
+class MAForumDiscussionsCell: UITableViewCell {
+
+
+    static let reuseID = "FormDiscussions"
+    
+    let dateLabel         = UILabel()
+    let cellLabel         = UILabel()
+    let commentsImageView = UIImageView()
+    let commentsLabel     = UILabel()
+    let seeMoreBtn        = UIButton()
+    let bottomView        = UIView()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+        configureDateLabel()
+        configureCellLabel()
+        configureSeeMoreBtn()
+        configureBottomView()
+        configureCommentsImageView()
+        configureCommentsLabel()
+        
+        contentView.backgroundColor = #colorLiteral(red: 0.9254901961, green: 0.9450980392, blue: 0.9803921569, alpha: 1)
+        
+        selectionStyle = .none
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    
+    
+    func setCell(For Cell: ForumDiscussionsCellInfo){
+        
+        dateLabel.text = Cell.date
+        cellLabel.text = Cell.nameOfForm
+        commentsImageView.image = UIImage(named: "comment")
+        commentsLabel.text = String(Cell.numberOfComments)
+        
+    }
+    
+    
+    
+    
+    
+    private func configureDateLabel(){
+        contentView.addSubview(dateLabel)
+        
+        dateLabel.textColor = .lightGray
+        
+        dateLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+        
+            dateLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            dateLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            dateLabel.widthAnchor.constraint(equalToConstant: 100),
+            dateLabel.heightAnchor.constraint(equalToConstant: 15),
+
+        ])
+        
+        
+        
+    }
+    
+    
+    
+    
+    private func configureCellLabel(){
+        contentView.addSubview(cellLabel)
+        
+        cellLabel.textColor = .black
+        
+        cellLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+        
+            cellLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 15),
+            cellLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+//            cellLabel.widthAnchor.constraint(equalToConstant: 160),
+            cellLabel.trailingAnchor.constraint(equalTo: centerXAnchor),
+            cellLabel.heightAnchor.constraint(equalToConstant: 20),
+
+        ])
+        
+        
+        
+    }
+    
+    
+    
+    
+    private func configureCommentsImageView(){
+        
+        contentView.addSubview(commentsImageView)
+        commentsImageView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+        
+            commentsImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            commentsImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
+            commentsImageView.widthAnchor.constraint(equalToConstant: 15),
+            commentsImageView.heightAnchor.constraint(equalToConstant: 15),
+        
+        ])
+        
+        
+        
+    }
+    
+    
+    
+    
+    private func configureCommentsLabel(){
+        
+        contentView.addSubview(commentsLabel)
+        commentsLabel.translatesAutoresizingMaskIntoConstraints = false
+        commentsLabel.adjustsFontSizeToFitWidth = true
+        commentsLabel.textColor = .lightGray
+        commentsLabel.textAlignment = .right
+        
+        NSLayoutConstraint.activate([
+        
+            commentsLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            commentsLabel.trailingAnchor.constraint(equalTo: commentsImageView.leadingAnchor, constant: -5),
+            commentsLabel.widthAnchor.constraint(equalToConstant: 30),
+            commentsLabel.heightAnchor.constraint(equalToConstant: 15),
+        
+        ])
+        
+        
+        
+    }
+    
+    
+    
+    
+    private func configureSeeMoreBtn(){
+        
+        contentView.addSubview(seeMoreBtn)
+        
+        seeMoreBtn.setTitle("See more", for: .normal)
+        seeMoreBtn.setTitleColor(#colorLiteral(red: 0.09411764706, green: 0.07843137255, blue: 0.3803921569, alpha: 1), for: .normal)
+        seeMoreBtn.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .light)
+        seeMoreBtn.backgroundColor = .clear
+        seeMoreBtn.setImage(UIImage(named: "rightArrow"), for: .normal)
+        seeMoreBtn.imageEdgeInsets = UIEdgeInsets(top: 3, left: 100, bottom: 0, right: 0)
+
+        
+        seeMoreBtn.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+        
+            seeMoreBtn.topAnchor.constraint(equalTo: cellLabel.topAnchor, constant: 5),
+            seeMoreBtn.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+            seeMoreBtn.heightAnchor.constraint(equalToConstant: 20),
+            seeMoreBtn.widthAnchor.constraint(equalToConstant: 110),
+
+        
+        ])
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    private func configureBottomView(){
+        contentView.addSubview(bottomView)
+        
+        bottomView.backgroundColor = .lightGray
+        
+        bottomView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+        
+            bottomView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+            bottomView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+            bottomView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            bottomView.heightAnchor.constraint(equalToConstant: 2)
+        
+        
+        ])
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+}

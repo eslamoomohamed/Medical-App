@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E8E114E909320841EB7B1A3 /* Pods_Medical_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFB2B0FFBE8E821FFD40850 /* Pods_Medical_App.framework */; };
+		AA45F2CF26627F0100E76557 /* MAOnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F2CE26627F0100E76557 /* MAOnBoardingView.swift */; };
+		AA45F2D22662911E00E76557 /* MAOnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F2D12662911E00E76557 /* MAOnBoardingVC.swift */; };
+		AA45F2D4266292E000E76557 /* OnBoradingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F2D3266292E000E76557 /* OnBoradingVC.swift */; };
+		AA45F2D62662938700E76557 /* MAPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F2D52662938700E76557 /* MAPageController.swift */; };
+		AA4654762661AC1900D9B7EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4654752661AC1900D9B7EF /* AppDelegate.swift */; };
+		AA4654782661AC1900D9B7EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4654772661AC1900D9B7EF /* SceneDelegate.swift */; };
+		AA46547F2661AC1B00D9B7EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA46547E2661AC1B00D9B7EF /* Assets.xcassets */; };
+		AA4654822661AC1B00D9B7EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4654802661AC1B00D9B7EF /* LaunchScreen.storyboard */; };
+		AA479FBE266DD59100572BB6 /* MAAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479FBD266DD59100572BB6 /* MAAlertView.swift */; };
+		AA479FC2266DD60200572BB6 /* MATitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479FC1266DD60200572BB6 /* MATitleLabel.swift */; };
+		AA479FC4266DD65300572BB6 /* MAAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA479FC3266DD65300572BB6 /* MAAlertVC.swift */; };
+		AA48659E2662CE0500449810 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA48659D2662CE0500449810 /* SignInVC.swift */; };
+		AA48A348266B435C0097B2C9 /* MAPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA48A347266B435C0097B2C9 /* MAPaymentVC.swift */; };
+		AA48A34A266B5A0F0097B2C9 /* MAPaymentCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA48A349266B5A0F0097B2C9 /* MAPaymentCardCell.swift */; };
+		AA492DAA2667CAF200254E26 /* MAMedicalRecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA492DA92667CAF200254E26 /* MAMedicalRecordsVC.swift */; };
+		AA492DAC2667CD1800254E26 /* MAMedicalRecordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA492DAB2667CD1800254E26 /* MAMedicalRecordsCell.swift */; };
+		AA492DAE2667CDFE00254E26 /* MedicalRecordCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA492DAD2667CDFE00254E26 /* MedicalRecordCellInfo.swift */; };
+		AA4AA9F826663AC8009A3DD1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AA9F726663AC8009A3DD1 /* UIViewController+Extension.swift */; };
+		AA4AA9FA26663AD7009A3DD1 /* MAMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AA9F926663AD7009A3DD1 /* MAMenuVC.swift */; };
+		AA4AA9FC26664D19009A3DD1 /* MAMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AA9FB26664D19009A3DD1 /* MAMenuCell.swift */; };
+		AA4AAA00266683F1009A3DD1 /* MATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AA9FF266683F1009A3DD1 /* MATextField.swift */; };
+		AA4AAA02266688AB009A3DD1 /* MALineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AAA01266688AB009A3DD1 /* MALineView.swift */; };
+		AA4AAA042666A21D009A3DD1 /* MARightBottomRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AAA032666A21D009A3DD1 /* MARightBottomRoundView.swift */; };
+		AA4FEA6F266AF03000A27849 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA4FEA6E266AF02F00A27849 /* GoogleService-Info.plist */; };
+		AA509C6C26770A470092ADD5 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA509C6B26770A470092ADD5 /* SignUpVC.swift */; };
+		AA528B4F2663FE9700DF9B6D /* DashboardCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA528B4E2663FE9700DF9B6D /* DashboardCellInfo.swift */; };
+		AA528B5126640DF800DF9B6D /* MAAppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA528B5026640DF800DF9B6D /* MAAppointmentsVC.swift */; };
+		AA52D945266E2D87003E1C8A /* SignInWithEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52D944266E2D87003E1C8A /* SignInWithEmailVC.swift */; };
+		AA55D0202669FB1500121917 /* MAPrrofileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55D01F2669FB1500121917 /* MAPrrofileVC.swift */; };
+		AA55D022266AB2BD00121917 /* MAFeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55D021266AB2BD00121917 /* MAFeedbackVC.swift */; };
+		AA55D024266ACDE600121917 /* MAAppointmentConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55D023266ACDE600121917 /* MAAppointmentConfirmationVC.swift */; };
+		AA5832BC2665307900BF2C3C /* MAMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5832BB2665307900BF2C3C /* MAMapVC.swift */; };
+		AA58373D2663819100C7CE5D /* MobileNumberSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58373C2663819100C7CE5D /* MobileNumberSignInVC.swift */; };
+		AA58373F2663862E00C7CE5D /* MobileNumberVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58373E2663862E00C7CE5D /* MobileNumberVerificationVC.swift */; };
+		AA58374126638CF800C7CE5D /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58374026638CF800C7CE5D /* LocationVC.swift */; };
+		AA5837432663BE2700C7CE5D /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5837422663BE2700C7CE5D /* DashboardVC.swift */; };
+		AA5837452663C5D500C7CE5D /* MADashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5837442663C5D500C7CE5D /* MADashboardCell.swift */; };
+		AA5837472663C68500C7CE5D /* MARoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5837462663C68500C7CE5D /* MARoundedView.swift */; };
+		AA5B192F26677B2800896CCD /* MAForumDiscussionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B192E26677B2800896CCD /* MAForumDiscussionsVC.swift */; };
+		AA5B193126677E9200896CCD /* MAForumDiscussionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B193026677E9200896CCD /* MAForumDiscussionsCell.swift */; };
+		AA5B19332667818600896CCD /* ForumDiscussionsCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B19322667818600896CCD /* ForumDiscussionsCellInfo.swift */; };
+		AAB1EB6B266D12AA0070058E /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1EB6A266D12AA0070058E /* UserDataService.swift */; };
+		AAD6D5F5267664B90093CC6F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6D5F4267664B90093CC6F /* NetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4BFB2B0FFBE8E821FFD40850 /* Pods_Medical_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medical_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B10BF011500226F2F43F4C /* Pods-Medical App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medical App.debug.xcconfig"; path = "Target Support Files/Pods-Medical App/Pods-Medical App.debug.xcconfig"; sourceTree = "<group>"; };
+		AA45F2CE26627F0100E76557 /* MAOnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAOnBoardingView.swift; sourceTree = "<group>"; };
+		AA45F2D12662911E00E76557 /* MAOnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAOnBoardingVC.swift; sourceTree = "<group>"; };
+		AA45F2D3266292E000E76557 /* OnBoradingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoradingVC.swift; sourceTree = "<group>"; };
+		AA45F2D52662938700E76557 /* MAPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPageController.swift; sourceTree = "<group>"; };
+		AA4654722661AC1900D9B7EF /* Medical App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medical App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4654752661AC1900D9B7EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA4654772661AC1900D9B7EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA46547E2661AC1B00D9B7EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA4654812661AC1B00D9B7EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA4654832661AC1B00D9B7EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA479FBD266DD59100572BB6 /* MAAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAAlertView.swift; sourceTree = "<group>"; };
+		AA479FC1266DD60200572BB6 /* MATitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATitleLabel.swift; sourceTree = "<group>"; };
+		AA479FC3266DD65300572BB6 /* MAAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAAlertVC.swift; sourceTree = "<group>"; };
+		AA48659D2662CE0500449810 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		AA48A347266B435C0097B2C9 /* MAPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPaymentVC.swift; sourceTree = "<group>"; };
+		AA48A349266B5A0F0097B2C9 /* MAPaymentCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPaymentCardCell.swift; sourceTree = "<group>"; };
+		AA492DA92667CAF200254E26 /* MAMedicalRecordsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAMedicalRecordsVC.swift; sourceTree = "<group>"; };
+		AA492DAB2667CD1800254E26 /* MAMedicalRecordsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAMedicalRecordsCell.swift; sourceTree = "<group>"; };
+		AA492DAD2667CDFE00254E26 /* MedicalRecordCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecordCellInfo.swift; sourceTree = "<group>"; };
+		AA4AA9F726663AC8009A3DD1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		AA4AA9F926663AD7009A3DD1 /* MAMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAMenuVC.swift; sourceTree = "<group>"; };
+		AA4AA9FB26664D19009A3DD1 /* MAMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAMenuCell.swift; sourceTree = "<group>"; };
+		AA4AA9FF266683F1009A3DD1 /* MATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATextField.swift; sourceTree = "<group>"; };
+		AA4AAA01266688AB009A3DD1 /* MALineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MALineView.swift; sourceTree = "<group>"; };
+		AA4AAA032666A21D009A3DD1 /* MARightBottomRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARightBottomRoundView.swift; sourceTree = "<group>"; };
+		AA4FEA6E266AF02F00A27849 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA509C6B26770A470092ADD5 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		AA528B4E2663FE9700DF9B6D /* DashboardCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellInfo.swift; sourceTree = "<group>"; };
+		AA528B5026640DF800DF9B6D /* MAAppointmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAAppointmentsVC.swift; sourceTree = "<group>"; };
+		AA52D944266E2D87003E1C8A /* SignInWithEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithEmailVC.swift; sourceTree = "<group>"; };
+		AA55D01F2669FB1500121917 /* MAPrrofileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPrrofileVC.swift; sourceTree = "<group>"; };
+		AA55D021266AB2BD00121917 /* MAFeedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAFeedbackVC.swift; sourceTree = "<group>"; };
+		AA55D023266ACDE600121917 /* MAAppointmentConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAAppointmentConfirmationVC.swift; sourceTree = "<group>"; };
+		AA5832BB2665307900BF2C3C /* MAMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAMapVC.swift; sourceTree = "<group>"; };
+		AA58373C2663819100C7CE5D /* MobileNumberSignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNumberSignInVC.swift; sourceTree = "<group>"; };
+		AA58373E2663862E00C7CE5D /* MobileNumberVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNumberVerificationVC.swift; sourceTree = "<group>"; };
+		AA58374026638CF800C7CE5D /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		AA5837422663BE2700C7CE5D /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		AA5837442663C5D500C7CE5D /* MADashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADashboardCell.swift; sourceTree = "<group>"; };
+		AA5837462663C68500C7CE5D /* MARoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARoundedView.swift; sourceTree = "<group>"; };
+		AA5B192E26677B2800896CCD /* MAForumDiscussionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAForumDiscussionsVC.swift; sourceTree = "<group>"; };
+		AA5B193026677E9200896CCD /* MAForumDiscussionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAForumDiscussionsCell.swift; sourceTree = "<group>"; };
+		AA5B19322667818600896CCD /* ForumDiscussionsCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDiscussionsCellInfo.swift; sourceTree = "<group>"; };
+		AAB1EB6A266D12AA0070058E /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		AAD6D5F4267664B90093CC6F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D63F295E2AD7CA9929E2B98C /* Pods-Medical App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medical App.release.xcconfig"; path = "Target Support Files/Pods-Medical App/Pods-Medical App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA46546F2661AC1900D9B7EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8E114E909320841EB7B1A3 /* Pods_Medical_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DB1D3BDA6B8285F57BD8C16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BFB2B0FFBE8E821FFD40850 /* Pods_Medical_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA45F2CB26627DFE00E76557 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA45F2D12662911E00E76557 /* MAOnBoardingVC.swift */,
+				AA528B5026640DF800DF9B6D /* MAAppointmentsVC.swift */,
+				AA5832BB2665307900BF2C3C /* MAMapVC.swift */,
+				AA4AA9F926663AD7009A3DD1 /* MAMenuVC.swift */,
+				AA5B192E26677B2800896CCD /* MAForumDiscussionsVC.swift */,
+				AA492DA92667CAF200254E26 /* MAMedicalRecordsVC.swift */,
+				AA55D01F2669FB1500121917 /* MAPrrofileVC.swift */,
+				AA55D021266AB2BD00121917 /* MAFeedbackVC.swift */,
+				AA48A347266B435C0097B2C9 /* MAPaymentVC.swift */,
+				AA55D023266ACDE600121917 /* MAAppointmentConfirmationVC.swift */,
+				AA479FC3266DD65300572BB6 /* MAAlertVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AA45F2CC26627E0700E76557 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA479FBF266DD5D100572BB6 /* Labels */,
+				AA52D3D4266CBF4E0073C37A /* Views */,
+				AA52D3D8266CC0050073C37A /* PageController */,
+				AA52D3D5266CBF800073C37A /* Cells */,
+				AA52D3D9266CC0140073C37A /* TextFiled */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA45F2CD26627E1000E76557 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA528B4E2663FE9700DF9B6D /* DashboardCellInfo.swift */,
+				AA5B19322667818600896CCD /* ForumDiscussionsCellInfo.swift */,
+				AA492DAD2667CDFE00254E26 /* MedicalRecordCellInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA45F2D0266290CF00E76557 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AA45F2D3266292E000E76557 /* OnBoradingVC.swift */,
+				AA48659D2662CE0500449810 /* SignInVC.swift */,
+				AA58373C2663819100C7CE5D /* MobileNumberSignInVC.swift */,
+				AA58373E2663862E00C7CE5D /* MobileNumberVerificationVC.swift */,
+				AA509C6B26770A470092ADD5 /* SignUpVC.swift */,
+				AA52D944266E2D87003E1C8A /* SignInWithEmailVC.swift */,
+				AA58374026638CF800C7CE5D /* LocationVC.swift */,
+				AA5837422663BE2700C7CE5D /* DashboardVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AA4654692661AC1900D9B7EF = {
+			isa = PBXGroup;
+			children = (
+				AA4654742661AC1900D9B7EF /* Medical App */,
+				AA4654732661AC1900D9B7EF /* Products */,
+				B64D5A32D2F70AA021B352C7 /* Pods */,
+				5DB1D3BDA6B8285F57BD8C16 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA4654732661AC1900D9B7EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA4654722661AC1900D9B7EF /* Medical App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA4654742661AC1900D9B7EF /* Medical App */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1EB69266D127C0070058E /* Managers */,
+				AA4AA9F626663A7D009A3DD1 /* Extension */,
+				AA45F2CD26627E1000E76557 /* Model */,
+				AA45F2CC26627E0700E76557 /* View */,
+				AA45F2CB26627DFE00E76557 /* Controller */,
+				AA45F2D0266290CF00E76557 /* Screens */,
+				AA4654752661AC1900D9B7EF /* AppDelegate.swift */,
+				AA4654772661AC1900D9B7EF /* SceneDelegate.swift */,
+				AA4FEA6E266AF02F00A27849 /* GoogleService-Info.plist */,
+				AA46547E2661AC1B00D9B7EF /* Assets.xcassets */,
+				AA4654802661AC1B00D9B7EF /* LaunchScreen.storyboard */,
+				AA4654832661AC1B00D9B7EF /* Info.plist */,
+			);
+			path = "Medical App";
+			sourceTree = "<group>";
+		};
+		AA479FBF266DD5D100572BB6 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				AA479FC0266DD5EF00572BB6 /* Titels */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		AA479FC0266DD5EF00572BB6 /* Titels */ = {
+			isa = PBXGroup;
+			children = (
+				AA479FC1266DD60200572BB6 /* MATitleLabel.swift */,
+			);
+			path = Titels;
+			sourceTree = "<group>";
+		};
+		AA4AA9F626663A7D009A3DD1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA4AA9F726663AC8009A3DD1 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AA52D3D4266CBF4E0073C37A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA45F2CE26627F0100E76557 /* MAOnBoardingView.swift */,
+				AA5837462663C68500C7CE5D /* MARoundedView.swift */,
+				AA4AAA01266688AB009A3DD1 /* MALineView.swift */,
+				AA4AAA032666A21D009A3DD1 /* MARightBottomRoundView.swift */,
+				AA479FBD266DD59100572BB6 /* MAAlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA52D3D5266CBF800073C37A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA52D3D7266CBF930073C37A /* CollectionViewCells */,
+				AA52D3D6266CBF880073C37A /* TableViewCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AA52D3D6266CBF880073C37A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AA492DAB2667CD1800254E26 /* MAMedicalRecordsCell.swift */,
+				AA5B193026677E9200896CCD /* MAForumDiscussionsCell.swift */,
+				AA4AA9FB26664D19009A3DD1 /* MAMenuCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		AA52D3D7266CBF930073C37A /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AA48A349266B5A0F0097B2C9 /* MAPaymentCardCell.swift */,
+				AA5837442663C5D500C7CE5D /* MADashboardCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		AA52D3D8266CC0050073C37A /* PageController */ = {
+			isa = PBXGroup;
+			children = (
+				AA45F2D52662938700E76557 /* MAPageController.swift */,
+			);
+			path = PageController;
+			sourceTree = "<group>";
+		};
+		AA52D3D9266CC0140073C37A /* TextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				AA4AA9FF266683F1009A3DD1 /* MATextField.swift */,
+			);
+			path = TextFiled;
+			sourceTree = "<group>";
+		};
+		AAB1EB69266D127C0070058E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1EB6A266D12AA0070058E /* UserDataService.swift */,
+				AAD6D5F4267664B90093CC6F /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B64D5A32D2F70AA021B352C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67B10BF011500226F2F43F4C /* Pods-Medical App.debug.xcconfig */,
+				D63F295E2AD7CA9929E2B98C /* Pods-Medical App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA4654712661AC1900D9B7EF /* Medical App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4654862661AC1B00D9B7EF /* Build configuration list for PBXNativeTarget "Medical App" */;
+			buildPhases = (
+				B62EB3044F61A3D161598CFE /* [CP] Check Pods Manifest.lock */,
+				AA46546E2661AC1900D9B7EF /* Sources */,
+				AA46546F2661AC1900D9B7EF /* Frameworks */,
+				AA4654702661AC1900D9B7EF /* Resources */,
+				66B71EC024ADDCFD24A1358C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Medical App";
+			productName = "Medical App";
+			productReference = AA4654722661AC1900D9B7EF /* Medical App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA46546A2661AC1900D9B7EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					AA4654712661AC1900D9B7EF = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = AA46546D2661AC1900D9B7EF /* Build configuration list for PBXProject "Medical App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA4654692661AC1900D9B7EF;
+			productRefGroup = AA4654732661AC1900D9B7EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA4654712661AC1900D9B7EF /* Medical App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA4654702661AC1900D9B7EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4654822661AC1B00D9B7EF /* LaunchScreen.storyboard in Resources */,
+				AA46547F2661AC1B00D9B7EF /* Assets.xcassets in Resources */,
+				AA4FEA6F266AF03000A27849 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66B71EC024ADDCFD24A1358C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Medical App/Pods-Medical App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Medical App/Pods-Medical App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Medical App/Pods-Medical App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62EB3044F61A3D161598CFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Medical App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA46546E2661AC1900D9B7EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4AA9F826663AC8009A3DD1 /* UIViewController+Extension.swift in Sources */,
+				AA45F2D62662938700E76557 /* MAPageController.swift in Sources */,
+				AA4AA9FC26664D19009A3DD1 /* MAMenuCell.swift in Sources */,
+				AAD6D5F5267664B90093CC6F /* NetworkManager.swift in Sources */,
+				AA48A348266B435C0097B2C9 /* MAPaymentVC.swift in Sources */,
+				AA5B19332667818600896CCD /* ForumDiscussionsCellInfo.swift in Sources */,
+				AA492DAC2667CD1800254E26 /* MAMedicalRecordsCell.swift in Sources */,
+				AA55D0202669FB1500121917 /* MAPrrofileVC.swift in Sources */,
+				AA509C6C26770A470092ADD5 /* SignUpVC.swift in Sources */,
+				AA528B4F2663FE9700DF9B6D /* DashboardCellInfo.swift in Sources */,
+				AA4AAA02266688AB009A3DD1 /* MALineView.swift in Sources */,
+				AA5837432663BE2700C7CE5D /* DashboardVC.swift in Sources */,
+				AA4AAA042666A21D009A3DD1 /* MARightBottomRoundView.swift in Sources */,
+				AA5B193126677E9200896CCD /* MAForumDiscussionsCell.swift in Sources */,
+				AAB1EB6B266D12AA0070058E /* UserDataService.swift in Sources */,
+				AA58373D2663819100C7CE5D /* MobileNumberSignInVC.swift in Sources */,
+				AA479FC4266DD65300572BB6 /* MAAlertVC.swift in Sources */,
+				AA55D022266AB2BD00121917 /* MAFeedbackVC.swift in Sources */,
+				AA58373F2663862E00C7CE5D /* MobileNumberVerificationVC.swift in Sources */,
+				AA4AA9FA26663AD7009A3DD1 /* MAMenuVC.swift in Sources */,
+				AA48659E2662CE0500449810 /* SignInVC.swift in Sources */,
+				AA55D024266ACDE600121917 /* MAAppointmentConfirmationVC.swift in Sources */,
+				AA45F2CF26627F0100E76557 /* MAOnBoardingView.swift in Sources */,
+				AA4654762661AC1900D9B7EF /* AppDelegate.swift in Sources */,
+				AA5832BC2665307900BF2C3C /* MAMapVC.swift in Sources */,
+				AA5837452663C5D500C7CE5D /* MADashboardCell.swift in Sources */,
+				AA492DAE2667CDFE00254E26 /* MedicalRecordCellInfo.swift in Sources */,
+				AA492DAA2667CAF200254E26 /* MAMedicalRecordsVC.swift in Sources */,
+				AA528B5126640DF800DF9B6D /* MAAppointmentsVC.swift in Sources */,
+				AA48A34A266B5A0F0097B2C9 /* MAPaymentCardCell.swift in Sources */,
+				AA45F2D22662911E00E76557 /* MAOnBoardingVC.swift in Sources */,
+				AA4654782661AC1900D9B7EF /* SceneDelegate.swift in Sources */,
+				AA479FBE266DD59100572BB6 /* MAAlertView.swift in Sources */,
+				AA4AAA00266683F1009A3DD1 /* MATextField.swift in Sources */,
+				AA5B192F26677B2800896CCD /* MAForumDiscussionsVC.swift in Sources */,
+				AA52D945266E2D87003E1C8A /* SignInWithEmailVC.swift in Sources */,
+				AA58374126638CF800C7CE5D /* LocationVC.swift in Sources */,
+				AA479FC2266DD60200572BB6 /* MATitleLabel.swift in Sources */,
+				AA5837472663C68500C7CE5D /* MARoundedView.swift in Sources */,
+				AA45F2D4266292E000E76557 /* OnBoradingVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA4654802661AC1B00D9B7EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA4654812661AC1B00D9B7EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA4654842661AC1B00D9B7EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA4654852661AC1B00D9B7EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA4654872661AC1B00D9B7EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B10BF011500226F2F43F4C /* Pods-Medical App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JT7ZHXC955;
+				INFOPLIST_FILE = "Medical App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "eslam.Medical-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AA4654882661AC1B00D9B7EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D63F295E2AD7CA9929E2B98C /* Pods-Medical App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JT7ZHXC955;
+				INFOPLIST_FILE = "Medical App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "eslam.Medical-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA46546D2661AC1900D9B7EF /* Build configuration list for PBXProject "Medical App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4654842661AC1B00D9B7EF /* Debug */,
+				AA4654852661AC1B00D9B7EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4654862661AC1B00D9B7EF /* Build configuration list for PBXNativeTarget "Medical App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4654872661AC1B00D9B7EF /* Debug */,
+				AA4654882661AC1B00D9B7EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA46546A2661AC1900D9B7EF /* Project object */;
+}
