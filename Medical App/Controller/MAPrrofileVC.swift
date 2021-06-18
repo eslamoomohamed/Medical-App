@@ -11,7 +11,7 @@ class MAPrrofileVC: UIViewController {
 
     
     let headerView  = UIView()
-    let backBtn     = UIButton()
+    let backBtn     = BGImageBtn(buttonTybe: "backIcon")
     let userImage   = UIImageView()
     let seconedView = UIView()
     
@@ -84,8 +84,6 @@ class MAPrrofileVC: UIViewController {
         
         
         view.addSubview(backBtn)
-        backBtn.setImage(UIImage(named: "backIcon"), for: .normal)
-        backBtn.translatesAutoresizingMaskIntoConstraints = false
         
         backBtn.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         

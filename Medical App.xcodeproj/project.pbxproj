@@ -49,8 +49,9 @@
 		AA5B192F26677B2800896CCD /* MAForumDiscussionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B192E26677B2800896CCD /* MAForumDiscussionsVC.swift */; };
 		AA5B193126677E9200896CCD /* MAForumDiscussionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B193026677E9200896CCD /* MAForumDiscussionsCell.swift */; };
 		AA5B19332667818600896CCD /* ForumDiscussionsCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B19322667818600896CCD /* ForumDiscussionsCellInfo.swift */; };
+		AA5C13C0267D559200951AA1 /* BGImageBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5C13BF267D559200951AA1 /* BGImageBtn.swift */; };
+		AA5C13C2267D5C4900951AA1 /* MASeconderyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5C13C1267D5C4900951AA1 /* MASeconderyLabel.swift */; };
 		AAB1EB6B266D12AA0070058E /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1EB6A266D12AA0070058E /* UserDataService.swift */; };
-		AAD6D5F5267664B90093CC6F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6D5F4267664B90093CC6F /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,8 +100,9 @@
 		AA5B192E26677B2800896CCD /* MAForumDiscussionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAForumDiscussionsVC.swift; sourceTree = "<group>"; };
 		AA5B193026677E9200896CCD /* MAForumDiscussionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAForumDiscussionsCell.swift; sourceTree = "<group>"; };
 		AA5B19322667818600896CCD /* ForumDiscussionsCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDiscussionsCellInfo.swift; sourceTree = "<group>"; };
+		AA5C13BF267D559200951AA1 /* BGImageBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGImageBtn.swift; sourceTree = "<group>"; };
+		AA5C13C1267D5C4900951AA1 /* MASeconderyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MASeconderyLabel.swift; sourceTree = "<group>"; };
 		AAB1EB6A266D12AA0070058E /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
-		AAD6D5F4267664B90093CC6F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D63F295E2AD7CA9929E2B98C /* Pods-Medical App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medical App.release.xcconfig"; path = "Target Support Files/Pods-Medical App/Pods-Medical App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 		AA45F2CC26627E0700E76557 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA5C13BE267D556F00951AA1 /* Buttons */,
 				AA479FBF266DD5D100572BB6 /* Labels */,
 				AA52D3D4266CBF4E0073C37A /* Views */,
 				AA52D3D8266CC0050073C37A /* PageController */,
@@ -228,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				AA479FC1266DD60200572BB6 /* MATitleLabel.swift */,
+				AA5C13C1267D5C4900951AA1 /* MASeconderyLabel.swift */,
 			);
 			path = Titels;
 			sourceTree = "<group>";
@@ -296,11 +300,18 @@
 			path = TextFiled;
 			sourceTree = "<group>";
 		};
+		AA5C13BE267D556F00951AA1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				AA5C13BF267D559200951AA1 /* BGImageBtn.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		AAB1EB69266D127C0070058E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				AAB1EB6A266D12AA0070058E /* UserDataService.swift */,
-				AAD6D5F4267664B90093CC6F /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -431,7 +442,6 @@
 				AA4AA9F826663AC8009A3DD1 /* UIViewController+Extension.swift in Sources */,
 				AA45F2D62662938700E76557 /* MAPageController.swift in Sources */,
 				AA4AA9FC26664D19009A3DD1 /* MAMenuCell.swift in Sources */,
-				AAD6D5F5267664B90093CC6F /* NetworkManager.swift in Sources */,
 				AA48A348266B435C0097B2C9 /* MAPaymentVC.swift in Sources */,
 				AA5B19332667818600896CCD /* ForumDiscussionsCellInfo.swift in Sources */,
 				AA492DAC2667CD1800254E26 /* MAMedicalRecordsCell.swift in Sources */,
@@ -443,6 +453,7 @@
 				AA4AAA042666A21D009A3DD1 /* MARightBottomRoundView.swift in Sources */,
 				AA5B193126677E9200896CCD /* MAForumDiscussionsCell.swift in Sources */,
 				AAB1EB6B266D12AA0070058E /* UserDataService.swift in Sources */,
+				AA5C13C0267D559200951AA1 /* BGImageBtn.swift in Sources */,
 				AA58373D2663819100C7CE5D /* MobileNumberSignInVC.swift in Sources */,
 				AA479FC4266DD65300572BB6 /* MAAlertVC.swift in Sources */,
 				AA55D022266AB2BD00121917 /* MAFeedbackVC.swift in Sources */,
@@ -460,6 +471,7 @@
 				AA48A34A266B5A0F0097B2C9 /* MAPaymentCardCell.swift in Sources */,
 				AA45F2D22662911E00E76557 /* MAOnBoardingVC.swift in Sources */,
 				AA4654782661AC1900D9B7EF /* SceneDelegate.swift in Sources */,
+				AA5C13C2267D5C4900951AA1 /* MASeconderyLabel.swift in Sources */,
 				AA479FBE266DD59100572BB6 /* MAAlertView.swift in Sources */,
 				AA4AAA00266683F1009A3DD1 /* MATextField.swift in Sources */,
 				AA5B192F26677B2800896CCD /* MAForumDiscussionsVC.swift in Sources */,

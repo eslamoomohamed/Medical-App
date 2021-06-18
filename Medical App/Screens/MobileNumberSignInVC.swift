@@ -12,7 +12,7 @@ import FirebaseAuth
 class MobileNumberSignInVC: UIViewController {
 
     
-    let backBtn     = UIButton()
+    let backBtn     = BGImageBtn(buttonTybe: "backIcon")
     let imageView   = UIImageView()
     let label0      = UILabel()
     let label1      = UILabel()
@@ -49,8 +49,7 @@ class MobileNumberSignInVC: UIViewController {
         
         
         view.addSubview(backBtn)
-        backBtn.setImage(UIImage(named: "backIcon"), for: .normal)
-        backBtn.translatesAutoresizingMaskIntoConstraints = false
+
         
         backBtn.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         
@@ -274,7 +273,7 @@ class MobileNumberSignInVC: UIViewController {
     
     @objc func pushActivationVC(){
         
-        guard let mobileNumber = textField.text else {
+        guard let _ = textField.text else {
             return
         }
         

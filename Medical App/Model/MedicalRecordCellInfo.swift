@@ -12,3 +12,4 @@ struct MedicalRecordCellInfo {
     var date: String
     var nameOfRecord: String
         }
+

@@ -10,9 +10,9 @@ import UIKit
 class MAAppointmentsVC: UIViewController {
 
     
-    let backBtn            = UIButton()
-    let profileBtn         = UIButton()
-    let label0             = UILabel()
+    let backBtn            = BGImageBtn(buttonTybe: "backIcon")
+    let profileBtn         = BGImageBtn(buttonTybe: "profileIcon")
+    let label0             = MASeconderyLabel(text: "My Appointments", textAlignment: .left, fontSize: 18, textColor: .black)
     let segmentView        = UIView()
     let segmentControl     = UISegmentedControl()
     let bookAppointmentBtn = UIButton()
@@ -44,8 +44,8 @@ class MAAppointmentsVC: UIViewController {
         
         
         view.addSubview(backBtn)
-        backBtn.setImage(UIImage(named: "backIcon"), for: .normal)
-        backBtn.translatesAutoresizingMaskIntoConstraints = false
+        
+        
         backBtn.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
@@ -78,8 +78,7 @@ class MAAppointmentsVC: UIViewController {
         
         
         view.addSubview(profileBtn)
-        profileBtn.setImage(UIImage(named: "profileIcon"), for: .normal)
-        profileBtn.translatesAutoresizingMaskIntoConstraints = false
+
         
         NSLayoutConstraint.activate([
         
@@ -104,11 +103,6 @@ class MAAppointmentsVC: UIViewController {
     func configureLAbel0(){
         
         view.addSubview(label0)
-        label0.translatesAutoresizingMaskIntoConstraints = false
-        label0.text = "My Appointments"
-        label0.textAlignment = .left
-        label0.textColor = .black
-        label0.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         
         NSLayoutConstraint.activate([
         

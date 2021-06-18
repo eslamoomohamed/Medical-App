@@ -11,13 +11,13 @@ import FirebaseAuth
 class SignInWithEmailVC: UIViewController {
 
     
-    let backBtn           = UIButton()
+    let backBtn           = BGImageBtn(buttonTybe: "backIcon")
     let label0            = UILabel()
     let emailLabel        = UILabel()
     let customView0       = UIView()
     let emailTextField    = MATextField()
     let clearBtn0         = UIButton()
-    let passwordLabel      = UILabel()
+    let passwordLabel     = UILabel()
     let customView1       = UIView()
     let passwordTextField = MATextField()
     let clearBtn1         = UIButton()
@@ -75,8 +75,7 @@ class SignInWithEmailVC: UIViewController {
         
         
         view.addSubview(backBtn)
-        backBtn.setImage(UIImage(named: "backIcon"), for: .normal)
-        backBtn.translatesAutoresizingMaskIntoConstraints = false
+
         backBtn.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([

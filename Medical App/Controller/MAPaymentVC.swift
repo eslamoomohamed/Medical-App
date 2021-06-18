@@ -10,10 +10,10 @@ import UIKit
 class MAPaymentVC: UIViewController {
 
     
-    let backBtn         = UIButton()
-    let profileBtn      = UIButton()
-    let label0          = UILabel()
-    let label1          = UILabel()
+    let backBtn         = BGImageBtn(buttonTybe: "backIcon")
+    let profileBtn      = BGImageBtn(buttonTybe: "profileIcon")
+    let label0          = MASeconderyLabel(text: "Dr. Clara OddingOddingOddingOdding ", textAlignment: .left, fontSize: 18, textColor: .black)
+    let label1          = MASeconderyLabel(text: "Confirmation", textAlignment: .left, fontSize: 18, textColor: .black)
     
     let roundView       = MARoundedView()
     let dateLabel       = UILabel()
@@ -66,8 +66,7 @@ class MAPaymentVC: UIViewController {
         
         
         view.addSubview(backBtn)
-        backBtn.setImage(UIImage(named: "backIcon"), for: .normal)
-        backBtn.translatesAutoresizingMaskIntoConstraints = false
+
         backBtn.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
@@ -101,8 +100,7 @@ class MAPaymentVC: UIViewController {
         
         
         view.addSubview(profileBtn)
-        profileBtn.setImage(UIImage(named: "profileIcon"), for: .normal)
-        profileBtn.translatesAutoresizingMaskIntoConstraints = false
+
         
         NSLayoutConstraint.activate([
         
@@ -126,12 +124,7 @@ class MAPaymentVC: UIViewController {
     func configureLAbel0(){
         
         view.addSubview(label0)
-        label0.translatesAutoresizingMaskIntoConstraints = false
-        label0.text = "Dr. Clara OddingOddingOddingOdding "
-        label0.textAlignment = .left
-        label0.textColor = .black
-        label0.lineBreakMode = .byTruncatingTail
-        label0.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        
         
         NSLayoutConstraint.activate([
         
@@ -151,12 +144,7 @@ class MAPaymentVC: UIViewController {
     func configureLAbel1(){
         
         view.addSubview(label1)
-        label1.translatesAutoresizingMaskIntoConstraints = false
-        label1.text = "Confirmation"
-        label1.textAlignment = .left
-        label1.textColor = .black
-        label1.lineBreakMode = .byTruncatingTail
-        label1.font = UIFont.systemFont(ofSize: 18, weight: .light)
+
         
         NSLayoutConstraint.activate([
         

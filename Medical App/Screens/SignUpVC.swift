@@ -11,7 +11,7 @@ import Firebase
 class SignUpVC: UIViewController {
 
     
-    let backBtn            = UIButton()
+    let backBtn            = BGImageBtn(buttonTybe: "backIcon")
     let label0             = UILabel()
     let emailLabel         = UILabel()
     let customView0        = UIView()
@@ -83,8 +83,7 @@ class SignUpVC: UIViewController {
         
         
         view.addSubview(backBtn)
-        backBtn.setImage(UIImage(named: "backIcon"), for: .normal)
-        backBtn.translatesAutoresizingMaskIntoConstraints = false
+
         backBtn.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
