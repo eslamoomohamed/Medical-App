@@ -10,12 +10,12 @@ import UIKit
 class MAPaymentVC: UIViewController {
 
     
-    let backBtn         = BGImageBtn(buttonTybe: "backIcon")
-    let profileBtn      = BGImageBtn(buttonTybe: "profileIcon")
-    let label0          = MASeconderyLabel(text: "Dr. Clara OddingOddingOddingOdding ", textAlignment: .left, fontSize: 18, textColor: .black)
-    let label1          = MASeconderyLabel(text: "Confirmation", textAlignment: .left, fontSize: 18, textColor: .black)
+    let backBtn         = MAImageBtn(buttonTybe: "backIcon")
+    let profileBtn      = MAImageBtn(buttonTybe: "profileIcon")
+    let label0          = MASeconderyLabel(text: "Dr. Clara OddingOddingOddingOdding ", textAlignment: .left, fontSize: 18, textColor: .black, weight: .semibold)
+    let label1          = MASeconderyLabel(text: "Confirmation", textAlignment: .left, fontSize: 18, textColor: .black, weight: .semibold)
     
-    let roundView       = MARoundedView()
+    let roundView       = MARoundedView(cornerRaduis: 15, with: true, backgroundColor: .systemGray5)
     let dateLabel       = UILabel()
     let timeLabel       = UILabel()
     let locationLabel   = UILabel()

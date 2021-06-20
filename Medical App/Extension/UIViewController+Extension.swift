@@ -40,6 +40,7 @@ extension UIViewController{
     
     
     func showLodingView(){
+        
         containerView                  = UIView(frame: view.bounds)
         containerView.backgroundColor  = .systemBackground
         containerView.alpha            = 0
@@ -56,6 +57,8 @@ extension UIViewController{
         activityAndicator.startAnimating()
     }
 
+    
+    
     
     func dismissActivityIndicator(){
         DispatchQueue.main.async {

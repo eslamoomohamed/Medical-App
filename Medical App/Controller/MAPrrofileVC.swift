@@ -11,7 +11,7 @@ class MAPrrofileVC: UIViewController {
 
     
     let headerView  = UIView()
-    let backBtn     = BGImageBtn(buttonTybe: "backIcon")
+    let backBtn     = MAImageBtn(buttonTybe: "backIcon")
     let userImage   = UIImageView()
     let seconedView = UIView()
     

@@ -50,8 +50,6 @@ class MAImageBtn: UIButton {
         
         
         translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        
+ 
     }
 }

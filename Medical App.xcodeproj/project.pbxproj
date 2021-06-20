@@ -31,6 +31,10 @@
 		AA4AAA00266683F1009A3DD1 /* MATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AA9FF266683F1009A3DD1 /* MATextField.swift */; };
 		AA4AAA02266688AB009A3DD1 /* MALineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AAA01266688AB009A3DD1 /* MALineView.swift */; };
 		AA4AAA042666A21D009A3DD1 /* MARightBottomRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AAA032666A21D009A3DD1 /* MARightBottomRoundView.swift */; };
+		AA4CF7D1267EA8D000D78F25 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4CF7D0267EA8D000D78F25 /* UIHelper.swift */; };
+		AA4F9E2F267F6AF900F79A27 /* MADefaultBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F9E2E267F6AF900F79A27 /* MADefaultBtn.swift */; };
+		AA4F9E31267F6E1700F79A27 /* MATFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F9E30267F6E1700F79A27 /* MATFView.swift */; };
+		AA4F9E34267F8BE900F79A27 /* MADefaultStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F9E33267F8BE900F79A27 /* MADefaultStack.swift */; };
 		AA4FEA6F266AF03000A27849 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA4FEA6E266AF02F00A27849 /* GoogleService-Info.plist */; };
 		AA509C6C26770A470092ADD5 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA509C6B26770A470092ADD5 /* SignUpVC.swift */; };
 		AA528B4F2663FE9700DF9B6D /* DashboardCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA528B4E2663FE9700DF9B6D /* DashboardCellInfo.swift */; };
@@ -49,7 +53,7 @@
 		AA5B192F26677B2800896CCD /* MAForumDiscussionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B192E26677B2800896CCD /* MAForumDiscussionsVC.swift */; };
 		AA5B193126677E9200896CCD /* MAForumDiscussionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B193026677E9200896CCD /* MAForumDiscussionsCell.swift */; };
 		AA5B19332667818600896CCD /* ForumDiscussionsCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B19322667818600896CCD /* ForumDiscussionsCellInfo.swift */; };
-		AA5C13C0267D559200951AA1 /* BGImageBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5C13BF267D559200951AA1 /* BGImageBtn.swift */; };
+		AA5C13C0267D559200951AA1 /* MAImageBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5C13BF267D559200951AA1 /* MAImageBtn.swift */; };
 		AA5C13C2267D5C4900951AA1 /* MASeconderyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5C13C1267D5C4900951AA1 /* MASeconderyLabel.swift */; };
 		AAB1EB6B266D12AA0070058E /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1EB6A266D12AA0070058E /* UserDataService.swift */; };
 /* End PBXBuildFile section */
@@ -82,6 +86,10 @@
 		AA4AA9FF266683F1009A3DD1 /* MATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATextField.swift; sourceTree = "<group>"; };
 		AA4AAA01266688AB009A3DD1 /* MALineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MALineView.swift; sourceTree = "<group>"; };
 		AA4AAA032666A21D009A3DD1 /* MARightBottomRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARightBottomRoundView.swift; sourceTree = "<group>"; };
+		AA4CF7D0267EA8D000D78F25 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		AA4F9E2E267F6AF900F79A27 /* MADefaultBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADefaultBtn.swift; sourceTree = "<group>"; };
+		AA4F9E30267F6E1700F79A27 /* MATFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATFView.swift; sourceTree = "<group>"; };
+		AA4F9E33267F8BE900F79A27 /* MADefaultStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADefaultStack.swift; sourceTree = "<group>"; };
 		AA4FEA6E266AF02F00A27849 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA509C6B26770A470092ADD5 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		AA528B4E2663FE9700DF9B6D /* DashboardCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellInfo.swift; sourceTree = "<group>"; };
@@ -100,7 +108,7 @@
 		AA5B192E26677B2800896CCD /* MAForumDiscussionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAForumDiscussionsVC.swift; sourceTree = "<group>"; };
 		AA5B193026677E9200896CCD /* MAForumDiscussionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAForumDiscussionsCell.swift; sourceTree = "<group>"; };
 		AA5B19322667818600896CCD /* ForumDiscussionsCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDiscussionsCellInfo.swift; sourceTree = "<group>"; };
-		AA5C13BF267D559200951AA1 /* BGImageBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGImageBtn.swift; sourceTree = "<group>"; };
+		AA5C13BF267D559200951AA1 /* MAImageBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAImageBtn.swift; sourceTree = "<group>"; };
 		AA5C13C1267D5C4900951AA1 /* MASeconderyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MASeconderyLabel.swift; sourceTree = "<group>"; };
 		AAB1EB6A266D12AA0070058E /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		D63F295E2AD7CA9929E2B98C /* Pods-Medical App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medical App.release.xcconfig"; path = "Target Support Files/Pods-Medical App/Pods-Medical App.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +155,7 @@
 		AA45F2CC26627E0700E76557 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA4F9E32267F8BCD00F79A27 /* StackView */,
 				AA5C13BE267D556F00951AA1 /* Buttons */,
 				AA479FBF266DD5D100572BB6 /* Labels */,
 				AA52D3D4266CBF4E0073C37A /* Views */,
@@ -203,6 +212,7 @@
 		AA4654742661AC1900D9B7EF /* Medical App */ = {
 			isa = PBXGroup;
 			children = (
+				AA4CF7CF267EA8BD00D78F25 /* Utilities */,
 				AAB1EB69266D127C0070058E /* Managers */,
 				AA4AA9F626663A7D009A3DD1 /* Extension */,
 				AA45F2CD26627E1000E76557 /* Model */,
@@ -244,6 +254,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		AA4CF7CF267EA8BD00D78F25 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AA4CF7D0267EA8D000D78F25 /* UIHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AA4F9E32267F8BCD00F79A27 /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				AA4F9E33267F8BE900F79A27 /* MADefaultStack.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
 		AA52D3D4266CBF4E0073C37A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +278,7 @@
 				AA4AAA01266688AB009A3DD1 /* MALineView.swift */,
 				AA4AAA032666A21D009A3DD1 /* MARightBottomRoundView.swift */,
 				AA479FBD266DD59100572BB6 /* MAAlertView.swift */,
+				AA4F9E30267F6E1700F79A27 /* MATFView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,7 +330,8 @@
 		AA5C13BE267D556F00951AA1 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				AA5C13BF267D559200951AA1 /* BGImageBtn.swift */,
+				AA5C13BF267D559200951AA1 /* MAImageBtn.swift */,
+				AA4F9E2E267F6AF900F79A27 /* MADefaultBtn.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -453,7 +481,7 @@
 				AA4AAA042666A21D009A3DD1 /* MARightBottomRoundView.swift in Sources */,
 				AA5B193126677E9200896CCD /* MAForumDiscussionsCell.swift in Sources */,
 				AAB1EB6B266D12AA0070058E /* UserDataService.swift in Sources */,
-				AA5C13C0267D559200951AA1 /* BGImageBtn.swift in Sources */,
+				AA5C13C0267D559200951AA1 /* MAImageBtn.swift in Sources */,
 				AA58373D2663819100C7CE5D /* MobileNumberSignInVC.swift in Sources */,
 				AA479FC4266DD65300572BB6 /* MAAlertVC.swift in Sources */,
 				AA55D022266AB2BD00121917 /* MAFeedbackVC.swift in Sources */,
@@ -463,6 +491,7 @@
 				AA55D024266ACDE600121917 /* MAAppointmentConfirmationVC.swift in Sources */,
 				AA45F2CF26627F0100E76557 /* MAOnBoardingView.swift in Sources */,
 				AA4654762661AC1900D9B7EF /* AppDelegate.swift in Sources */,
+				AA4F9E31267F6E1700F79A27 /* MATFView.swift in Sources */,
 				AA5832BC2665307900BF2C3C /* MAMapVC.swift in Sources */,
 				AA5837452663C5D500C7CE5D /* MADashboardCell.swift in Sources */,
 				AA492DAE2667CDFE00254E26 /* MedicalRecordCellInfo.swift in Sources */,
@@ -475,11 +504,14 @@
 				AA479FBE266DD59100572BB6 /* MAAlertView.swift in Sources */,
 				AA4AAA00266683F1009A3DD1 /* MATextField.swift in Sources */,
 				AA5B192F26677B2800896CCD /* MAForumDiscussionsVC.swift in Sources */,
+				AA4F9E2F267F6AF900F79A27 /* MADefaultBtn.swift in Sources */,
+				AA4F9E34267F8BE900F79A27 /* MADefaultStack.swift in Sources */,
 				AA52D945266E2D87003E1C8A /* SignInWithEmailVC.swift in Sources */,
 				AA58374126638CF800C7CE5D /* LocationVC.swift in Sources */,
 				AA479FC2266DD60200572BB6 /* MATitleLabel.swift in Sources */,
 				AA5837472663C68500C7CE5D /* MARoundedView.swift in Sources */,
 				AA45F2D4266292E000E76557 /* OnBoradingVC.swift in Sources */,
+				AA4CF7D1267EA8D000D78F25 /* UIHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

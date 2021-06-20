@@ -8,6 +8,7 @@
 import Foundation
 
 struct ForumDiscussionsCellInfo {
+    
     var date: String
     var nameOfForm: String
     var numberOfComments: Int

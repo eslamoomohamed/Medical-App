@@ -21,12 +21,12 @@ class MASeconderyLabel: UILabel {
     
     
     
-    init(text: String, textAlignment: NSTextAlignment, fontSize: CGFloat, textColor: UIColor) {
+    init(text: String, textAlignment: NSTextAlignment, fontSize: CGFloat, textColor: UIColor, weight: UIFont.Weight) {
         super.init(frame: .zero)
         self.text = text
         self.textColor = textColor
         self.textAlignment = textAlignment
-        self.font = UIFont.systemFont(ofSize: fontSize, weight: .semibold)
+        self.font = UIFont.systemFont(ofSize: fontSize, weight: weight)
         configure()
     }
     
@@ -35,10 +35,10 @@ class MASeconderyLabel: UILabel {
     private func configure(){
         
         translatesAutoresizingMaskIntoConstraints = false
-        textColor                   = .label
+        
         adjustsFontSizeToFitWidth   = true
-        minimumScaleFactor          = 0.9
         lineBreakMode               = .byTruncatingTail
+        adjustsFontSizeToFitWidth   = true
         
         
         

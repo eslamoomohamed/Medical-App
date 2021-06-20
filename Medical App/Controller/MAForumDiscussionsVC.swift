@@ -10,9 +10,9 @@ import UIKit
 class MAForumDiscussionsVC: UIViewController {
 
     
-    let backBtn            = BGImageBtn(buttonTybe: "backIcon")
-    let profileBtn         = BGImageBtn(buttonTybe: "profileIcon")
-    let label0             = MASeconderyLabel(text: "Forum Discussions", textAlignment: .left, fontSize: 18, textColor: .black)
+    let backBtn            = MAImageBtn(buttonTybe: "backIcon")
+    let profileBtn         = MAImageBtn(buttonTybe: "profileIcon")
+    let label0             = MASeconderyLabel(text: "Forum Discussions", textAlignment: .left, fontSize: 18, textColor: .black, weight: .semibold)
     let segmentView        = UIView()
     let segmentControl     = UISegmentedControl()
     

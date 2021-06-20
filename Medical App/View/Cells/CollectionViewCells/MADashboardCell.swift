@@ -12,7 +12,7 @@ class MADashboardCell: UICollectionViewCell {
     
     static let reuseID = "dashboardCell"
     
-    let roundView = MARoundedView()
+    let roundView = MARoundedView(cornerRaduis: 15, with: true, backgroundColor: .systemGray5)
     let cellTitle = UILabel()
     let imageView = UIImageView()
     

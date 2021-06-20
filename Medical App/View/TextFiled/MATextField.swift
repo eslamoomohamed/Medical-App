@@ -20,17 +20,25 @@ class MATextField: UITextField {
     
     
     
+    init(placeHolder: String, textAlignment: NSTextAlignment, keyboardType:UIKeyboardType, isSecureTextEntry: Bool ) {
+        super.init(frame: .zero)
+        
+        self.placeholder   = placeHolder
+        self.textAlignment = textAlignment
+        self.keyboardType  = keyboardType
+        self.isSecureTextEntry = isSecureTextEntry
+        configureTF()
+    }
+    
     
     
     private func configureTF(){
         
         translatesAutoresizingMaskIntoConstraints = false
-        keyboardType                              = .numberPad
         returnKeyType                             = .done
         minimumFontSize                           = 10
         adjustsFontSizeToFitWidth                 = true
-        textAlignment                             = .center
-        textContentType                           = .oneTimeCode
+        autocorrectionType                        = .no
         
         
         

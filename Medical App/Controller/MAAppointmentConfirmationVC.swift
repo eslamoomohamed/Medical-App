@@ -10,11 +10,11 @@ import UIKit
 class MAAppointmentConfirmationVC: UIViewController {
 
     
-    let backBtn         = BGImageBtn(buttonTybe: "backIcon")
-    let profileBtn      = BGImageBtn(buttonTybe: "profileIcon")
-    let label0          = MASeconderyLabel(text: "Appointment Confirmed!", textAlignment: .left, fontSize: 18, textColor: .black)
+    let backBtn         = MAImageBtn(buttonTybe: "backIcon")
+    let profileBtn      = MAImageBtn(buttonTybe: "profileIcon")
+    let label0          = MASeconderyLabel(text: "Appointment Confirmed!", textAlignment: .left, fontSize: 18, textColor: .black, weight: .semibold)
     let confirmImage    = UIImageView()
-    let roundView       = MARoundedView()
+    let roundView       = MARoundedView(cornerRaduis: 15, with: true, backgroundColor: .systemGray5)
     let dateLabel       = UILabel()
     let timeLabel       = UILabel()
     
