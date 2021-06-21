@@ -12,12 +12,9 @@ class MADefaultBtn: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
-        
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     
     init(btnTitle: String, titleColor: UIColor, backgroundColor: UIColor, raduis: CGFloat ) {
@@ -30,12 +27,5 @@ class MADefaultBtn: UIButton {
     }
     
     
-    
-    private func configure(){
-    
-        translatesAutoresizingMaskIntoConstraints = false
- 
-    }
-
-
+    private func configure(){ translatesAutoresizingMaskIntoConstraints = false }
 }

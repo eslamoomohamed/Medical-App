@@ -35,6 +35,8 @@
 		AA4F9E2F267F6AF900F79A27 /* MADefaultBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F9E2E267F6AF900F79A27 /* MADefaultBtn.swift */; };
 		AA4F9E31267F6E1700F79A27 /* MATFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F9E30267F6E1700F79A27 /* MATFView.swift */; };
 		AA4F9E34267F8BE900F79A27 /* MADefaultStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F9E33267F8BE900F79A27 /* MADefaultStack.swift */; };
+		AA4F9E36267FB4B000F79A27 /* MADefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F9E35267FB4B000F79A27 /* MADefaultView.swift */; };
+		AA4F9E39267FB60A00F79A27 /* MADefaultImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F9E38267FB60A00F79A27 /* MADefaultImageView.swift */; };
 		AA4FEA6F266AF03000A27849 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA4FEA6E266AF02F00A27849 /* GoogleService-Info.plist */; };
 		AA509C6C26770A470092ADD5 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA509C6B26770A470092ADD5 /* SignUpVC.swift */; };
 		AA528B4F2663FE9700DF9B6D /* DashboardCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA528B4E2663FE9700DF9B6D /* DashboardCellInfo.swift */; };
@@ -90,6 +92,8 @@
 		AA4F9E2E267F6AF900F79A27 /* MADefaultBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADefaultBtn.swift; sourceTree = "<group>"; };
 		AA4F9E30267F6E1700F79A27 /* MATFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATFView.swift; sourceTree = "<group>"; };
 		AA4F9E33267F8BE900F79A27 /* MADefaultStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADefaultStack.swift; sourceTree = "<group>"; };
+		AA4F9E35267FB4B000F79A27 /* MADefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADefaultView.swift; sourceTree = "<group>"; };
+		AA4F9E38267FB60A00F79A27 /* MADefaultImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADefaultImageView.swift; sourceTree = "<group>"; };
 		AA4FEA6E266AF02F00A27849 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA509C6B26770A470092ADD5 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		AA528B4E2663FE9700DF9B6D /* DashboardCellInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellInfo.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 		AA45F2CC26627E0700E76557 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA4F9E37267FB5F300F79A27 /* ImageView */,
 				AA4F9E32267F8BCD00F79A27 /* StackView */,
 				AA5C13BE267D556F00951AA1 /* Buttons */,
 				AA479FBF266DD5D100572BB6 /* Labels */,
@@ -270,6 +275,14 @@
 			path = StackView;
 			sourceTree = "<group>";
 		};
+		AA4F9E37267FB5F300F79A27 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				AA4F9E38267FB60A00F79A27 /* MADefaultImageView.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
 		AA52D3D4266CBF4E0073C37A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +292,7 @@
 				AA4AAA032666A21D009A3DD1 /* MARightBottomRoundView.swift */,
 				AA479FBD266DD59100572BB6 /* MAAlertView.swift */,
 				AA4F9E30267F6E1700F79A27 /* MATFView.swift */,
+				AA4F9E35267FB4B000F79A27 /* MADefaultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -469,6 +483,7 @@
 			files = (
 				AA4AA9F826663AC8009A3DD1 /* UIViewController+Extension.swift in Sources */,
 				AA45F2D62662938700E76557 /* MAPageController.swift in Sources */,
+				AA4F9E36267FB4B000F79A27 /* MADefaultView.swift in Sources */,
 				AA4AA9FC26664D19009A3DD1 /* MAMenuCell.swift in Sources */,
 				AA48A348266B435C0097B2C9 /* MAPaymentVC.swift in Sources */,
 				AA5B19332667818600896CCD /* ForumDiscussionsCellInfo.swift in Sources */,
@@ -487,6 +502,7 @@
 				AA55D022266AB2BD00121917 /* MAFeedbackVC.swift in Sources */,
 				AA58373F2663862E00C7CE5D /* MobileNumberVerificationVC.swift in Sources */,
 				AA4AA9FA26663AD7009A3DD1 /* MAMenuVC.swift in Sources */,
+				AA4F9E39267FB60A00F79A27 /* MADefaultImageView.swift in Sources */,
 				AA48659E2662CE0500449810 /* SignInVC.swift in Sources */,
 				AA55D024266ACDE600121917 /* MAAppointmentConfirmationVC.swift in Sources */,
 				AA45F2CF26627F0100E76557 /* MAOnBoardingView.swift in Sources */,

@@ -8,17 +8,14 @@
 import UIKit
 
 class MATitleLabel: UILabel {
-
-
+    
     override init(frame: CGRect) {
         super.init(frame: .zero)
         configure()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     
     init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
@@ -29,16 +26,11 @@ class MATitleLabel: UILabel {
     }
     
     
-    
     private func configure(){
-        
         translatesAutoresizingMaskIntoConstraints = false
-        textColor                   = .label
-        adjustsFontSizeToFitWidth   = true
-        minimumScaleFactor          = 0.9
-        lineBreakMode               = .byTruncatingTail
-        
-        
-        
-    }
+        textColor                 = .label
+        adjustsFontSizeToFitWidth = true
+        minimumScaleFactor        = 0.9
+        lineBreakMode             = .byTruncatingTail
+        }
 }

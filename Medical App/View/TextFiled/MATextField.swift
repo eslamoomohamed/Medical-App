@@ -14,34 +14,25 @@ class MATextField: UITextField {
         configureTF()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     
     init(placeHolder: String, textAlignment: NSTextAlignment, keyboardType:UIKeyboardType, isSecureTextEntry: Bool ) {
         super.init(frame: .zero)
-        
-        self.placeholder   = placeHolder
-        self.textAlignment = textAlignment
-        self.keyboardType  = keyboardType
+        self.placeholder       = placeHolder
+        self.textAlignment     = textAlignment
+        self.keyboardType      = keyboardType
         self.isSecureTextEntry = isSecureTextEntry
         configureTF()
     }
     
     
-    
     private func configureTF(){
-        
         translatesAutoresizingMaskIntoConstraints = false
         returnKeyType                             = .done
         minimumFontSize                           = 10
         adjustsFontSizeToFitWidth                 = true
         autocorrectionType                        = .no
-        
-        
-        
     }
-
 }

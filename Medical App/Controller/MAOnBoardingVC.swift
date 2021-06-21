@@ -21,14 +21,12 @@ class MAOnBoardingVC: UIViewController {
     }
     
     
-    
     func setView(title: String, image0: String, image1: String){
         self.titleLabel = title
         self.image0     = image0
         self.image1     = image1
         onBoardingView.setView(image0Name: image0, image1Name: image1, title: title)
     }
-    
     
     
     func configureOnBoardingView(){

@@ -11,9 +11,9 @@ class MobileNumberVerificationVC: UIViewController {
 
     
     
-    let imageView      = UIImageView()
-    let label0         = MASeconderyLabel(text: "Verification", textAlignment: .center, fontSize: 25, textColor: #colorLiteral(red: 0.09411764706, green: 0.07843137255, blue: 0.3803921569, alpha: 1), weight: .semibold)
-    let label1         = MASeconderyLabel(text: "Insert your code here:", textAlignment: .center, fontSize: 18, textColor: .black, weight: .semibold)
+    let imageView      = MADefaultImageView(with: "Logo")
+    let label0         = MASeconderyLabel(text: "Verification", textAlignment: .center, fontSize: 25, textColor: #colorLiteral(red: 0.09411764706, green: 0.07843137255, blue: 0.3803921569, alpha: 1), weight: .semibold,numOflines: 0,fitWidth: false)
+    let label1         = MASeconderyLabel(text: "Insert your code here:", textAlignment: .center, fontSize: 18, textColor: .black, weight: .semibold,numOflines: 0,fitWidth: false)
     let customView     = MARoundedView(cornerRaduis: 10, with: false, backgroundColor: .white)
     let clearBtn       = MAImageBtn(buttonTybe: "clearBtn")
     let stackView      = MADefaultStack()
@@ -59,9 +59,6 @@ class MobileNumberVerificationVC: UIViewController {
     
     func configureLogo(){
         view.addSubview(imageView)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "Logo")
-        imageView.contentMode = .center
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
             imageView.widthAnchor.constraint(equalToConstant: 150),

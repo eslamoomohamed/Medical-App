@@ -13,9 +13,9 @@ class MobileNumberSignInVC: UIViewController {
 
     
     let backBtn     = MAImageBtn(buttonTybe: "backIcon")
-    let imageView   = UIImageView()
-    let label0      = MASeconderyLabel(text: "Mobile Number", textAlignment: .center, fontSize: 25, textColor: #colorLiteral(red: 0.09411764706, green: 0.07843137255, blue: 0.3803921569, alpha: 1) , weight: .semibold)
-    let label1      = MASeconderyLabel(text: "The code will be sent to your mobile number", textAlignment: .center, fontSize: 18, textColor: .black, weight: .light)
+    let imageView   = MADefaultImageView(with: "Logo")
+    let label0      = MASeconderyLabel(text: "Mobile Number", textAlignment: .center, fontSize: 25, textColor: #colorLiteral(red: 0.09411764706, green: 0.07843137255, blue: 0.3803921569, alpha: 1) , weight: .semibold,numOflines: 0,fitWidth: false)
+    let label1      = MASeconderyLabel(text: "The code will be sent to your mobile number", textAlignment: .center, fontSize: 18, textColor: .black, weight: .light,numOflines: 0,fitWidth: false)
     let customView  = MARoundedView(cornerRaduis: 10, with: false, backgroundColor: .white)
     let textField   = MATextField(placeHolder: "Mobile Number", textAlignment: .center, keyboardType: .numberPad, isSecureTextEntry: false)
     let clearBtn    = MAImageBtn(buttonTybe: "clearBtn")
@@ -62,9 +62,6 @@ class MobileNumberSignInVC: UIViewController {
     
     func configureLogo(){
         view.addSubview(imageView)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "Logo")
-        imageView.contentMode = .center
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
             imageView.widthAnchor.constraint(equalToConstant: 150),

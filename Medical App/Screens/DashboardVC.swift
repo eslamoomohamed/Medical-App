@@ -9,10 +9,10 @@ import UIKit
 
 class DashboardVC: UIViewController {
 
-    let headerView = UIView()
+    let headerView = MADefaultView(backgroundColor: .white)
     let menuBtn    = MAImageBtn(buttonTybe: "menuIcon")
     let profileBtn = MAImageBtn(buttonTybe: "profileIcon")
-    let label0     = MASeconderyLabel(text: "Dashboard", textAlignment: .left, fontSize: 25, textColor: #colorLiteral(red: 0.09411764706, green: 0.07843137255, blue: 0.3803921569, alpha: 1) , weight: .semibold)
+    let label0     = MASeconderyLabel(text: "Dashboard", textAlignment: .left, fontSize: 25, textColor: #colorLiteral(red: 0.09411764706, green: 0.07843137255, blue: 0.3803921569, alpha: 1) , weight: .semibold,numOflines: 0,fitWidth: false)
     
     var collectionView: UICollectionView!
     
@@ -38,13 +38,10 @@ class DashboardVC: UIViewController {
     
     func configureHeaderView(){
         view.addSubview(headerView)
-        headerView.backgroundColor = .white
-        headerView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.topAnchor),
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-//            headerView.heightAnchor.constraint(equalToConstant: 130)
             headerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.15)
         ])
     }
@@ -78,10 +75,6 @@ class DashboardVC: UIViewController {
             profileBtn.heightAnchor.constraint(equalTo: profileBtn.widthAnchor)
 
         ])
-        
-        
-        
-        
     }
     
     
@@ -97,8 +90,7 @@ class DashboardVC: UIViewController {
         headerView.addSubview(label0)
         NSLayoutConstraint.activate([
             label0.topAnchor.constraint(equalTo: menuBtn.bottomAnchor, constant: 10),
-            label0.leadingAnchor.constraint(equalTo: menuBtn.leadingAnchor),
-//            label0.heightAnchor.constraint(equalToConstant: 30)
+            label0.leadingAnchor.constraint(equalTo: menuBtn.leadingAnchor)
         ])
     }
     

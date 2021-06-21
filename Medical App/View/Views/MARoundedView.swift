@@ -15,14 +15,13 @@ class MARoundedView: UIView {
         configure()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
     
     init(cornerRaduis:CGFloat, with Shadow: Bool, backgroundColor: UIColor ) {
         super.init(frame: .zero)
-        layer.cornerRadius  = cornerRaduis
+        layer.cornerRadius   = cornerRaduis
         self.backgroundColor = backgroundColor
         if Shadow {
             layer.shadowColor   = UIColor.lightGray.cgColor
@@ -30,17 +29,11 @@ class MARoundedView: UIView {
             layer.shadowOpacity = 1
         }
         configure()
-
     }
- 
+    
     
     private func configure(){
-        
         translatesAutoresizingMaskIntoConstraints = false
         layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner]
-
-        
-        
     }
-
 }
